@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       var password =  prompt("请输入赵旭东的密码");
+       if(password == '110')
+       {
+           alert('密码正确')
+       }
+       else{
+           alert('密码错误！')
+       }
+       function color(str){
+            document.body.style.backgroundColor = str;
+       }
+    </script>
+</head>
+<body>
+    <button onclick="color('red')">设为红色</button>
+    <button onclick="color('yellow')">设为黄色</button>
+    <button onclick="color('blue')">设为蓝色</button>
+    <button onclick="color('#000')">设为自定义颜色</button>
+</body>
+</html>
