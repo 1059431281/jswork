@@ -6,7 +6,7 @@ if(isNaN(level)){
 }
 console.log(level)
 for(var i=1;i<=level;++i){
-    var blank = level - i;
+    var blank = level - i;   
     for(var k=0;k<blank;++k){
         document.write('&nbsp;');
     }
