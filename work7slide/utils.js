@@ -22,14 +22,13 @@ function insertSort(str) {
     let sortLog = []
     for (let i=1;i<arr.length;i++){
         for (let j=i;j>0;j--){
-            sortLog.push([arr.concat(),[j,j+1]])
-            sortLog.push([arr.concat(),[j,j+1]])
-            sortLog.push([arr.concat(),[j,j+1]])
+            sortLog.push([arr.concat(),[j-1,j]])
+            sortLog.push([arr.concat(),[j-1,j]])
+            sortLog.push([arr.concat(),[j-1,j]])
 
             if(arr[j-1]>arr[j]){
                 [arr[j-1],arr[j]]=[arr[j],arr[j-1]]
-
-                sortLog.push([arr.concat(),[j,j+1]])
+                sortLog.push([arr.concat(),[j-1,j]])
             }
         }
     }
@@ -41,14 +40,12 @@ function showLog(logValues,showElement) {
     let {done,value:[row,pos]}=logValues.next()
     for(const key in row){
         let color = pos.indexOf(Number(key))>-1?'color:red;':''
+
         str += '<span style="font-size: '+row[key]*20+'px;'+ color+
             '">'+ row[key] +'</span>'
     }
 
     showElement.innerHTML=str
-    var showElement1 = showElement
     if(pos[0]!==-1)
         setTimeout("showLog(logValues,showDiv)",500)
-
-    console.log(showElement1)
 }
