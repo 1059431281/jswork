@@ -1,5 +1,8 @@
  function goldbach() {
-     let value = document.getElementById('odd').value
+     var value = document.getElementById('odd').value
+     if(value%2!==0){
+         alert("请输入偶数")
+     }
      let goldbach = document.getElementById('goldbach')
      var arr =[]
      var a = 0;
@@ -15,10 +18,10 @@
          }
      }
      var str = ''
-     console.log(arr)
-     for(let i=0;i<arr.length;i++){
+     console.log(value)
+     for(let i=0;i<(arr.length)/2;i++){
         for(let j=0;j<arr.length;j++){
-            if((arr[i]+arr[j])===200){
+            if((arr[i]+arr[j])===Number(value)){
                 str += '<div>'+value+"可以拆分为两个质数"+arr[i]+"与"+arr[j]+"的和"+ '</div>'
                 console.log(value+"可以拆分为两个质数"+arr[i]+"与"+arr[j]+"的和")
             }
