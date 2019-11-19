@@ -27,6 +27,6 @@ function stat() {
     let value = str.split('').sort().reduce(
         (a, c) => (a[c]++ || (a[c] = 1), a), {}
         )
-    console.log(value)
+    console.log(str.split(''))
     document.getElementById('result').innerText =JSON.stringify(value)
 }
