@@ -33,7 +33,9 @@
     document.getElementById('preyear').setAttribute('data-year', pre);
     document.getElementById('nextyear').setAttribute('data-year', next);
     document.getElementById('curyear').innerText = year1
-    document.getElementById('preyear').innerText = "<<"+pre
+    //innertext 在调用的元素下面添加文本
+    //innerHtml 在调用的元素下面添加元素
+    document.getElementById('preyear').innerText = "<<"  + pre
     document.getElementById('nextyear').innerText = next+ ">>"
 </script>
 <script src="calender.js"></script>
