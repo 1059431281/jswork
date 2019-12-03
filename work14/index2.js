@@ -1,7 +1,7 @@
 var date = new Date()
 let h1=m1=s1=0
 
-m1 = 60-date.getMinutes()
+m1 = 59-date.getMinutes()
 s1 = 60-date.getSeconds()
 
 let id1 =setInterval(seckill,1000)
