@@ -1,10 +1,10 @@
 var date = new Date()
 let h1=m1=s1=0
 
-h1 = date.getHours()
-m1 = date.getMinutes()
-s1 = date.getSeconds()
-let id1 =setInterval(seckill,1)
+m1 = 60-date.getMinutes()
+s1 = 60-date.getSeconds()
+
+let id1 =setInterval(seckill,1000)
 
 function seckill() {
     s1--
