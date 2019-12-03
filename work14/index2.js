@@ -4,7 +4,7 @@ let h1=m1=s1=0
 m1 = 59-date.getMinutes()
 s1 = 59-date.getSeconds()
 
-let id1 =setInterval(seckill,1)
+let id1 =setInterval(seckill,1000)
 
 function seckill() {
     s1--
