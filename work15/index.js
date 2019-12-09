@@ -1,0 +1,19 @@
+ShopCart('cart',[
+    {
+        name:'web前端开发中级（上册）',
+        price: 69.0,
+        num:2
+    },{
+        name:'web前端开发中级（下册）',
+        price: 69.0,
+        num:2
+    },{
+        name:'web前端开发级（上册）',
+        price: 49.0,
+        num:3
+    },{
+        name:'web前端开发高级级（下册）',
+        price: 49.0,
+        num:3
+    },
+])
