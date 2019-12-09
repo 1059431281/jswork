@@ -6,7 +6,7 @@
 
 .cart-tittle{
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
     border-bottom: 1px solid #AED2FF;
     line-height: 30px;
     height: 30px;
@@ -20,7 +20,7 @@
     width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Verdana,"Microsoft YaHei";
     color: #333;
 }
@@ -89,14 +89,15 @@
     border: 1px solid #bbb;
 }
 
-.cart-delm,
+.cart-del,
 .cart-all,
 .cart-unall{
     color: #3366D4;
+    font-size:15px;
 }
 
 .cart-del:hover,
-.cart-unall,
+.cart-unall:hover,
 .cart-all:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -115,12 +116,12 @@
 .cart-total-price{
     color:#FF3334;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .cart-bottom-btn{
     color: #FFF;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     margin: 0 20px;
