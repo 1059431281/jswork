@@ -28,10 +28,14 @@ function  getStyle(obj,attr) {
 }
 var obj = document.getElementById('box')
 console.log(obj)
+var bug = 1;
 obj.onclick = function () {
-    var left = parseInt(Math.random()*1400)
-    var top = parseInt(Math.random()*1400)
-    console.log(left)
-    animate(obj,{'left':left,'top':top})
 
+    if(bug==1) {
+        var left = parseInt(Math.random() * 1400)
+        var top = parseInt(Math.random() * 1400)
+        console.log(left)
+        animate(obj, {'left': left, 'top': top})
+        bug =0;
+    }
 }
