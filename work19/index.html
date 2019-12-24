@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赵旭东的简易webSocket聊天室</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    服务器：<input type="text" id="server" value="ws://139.9.81.203:8081">
+    名称：<input type="text" id="nickname" value="小w">
+    <button id="conn" onclick="connect()">连接</button>
+    <button onclick="disconnect()" id="disconn">断开</button>
+    <br>
+    发言：<input size="40" id="content"><button onclick="send()">发送</button>
+    <div class="sscrollbox" id="board">
+        <div>a</div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
